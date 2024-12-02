@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Calculator with Memory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+<div class="container">
+    <div class="calculator">
+        <form name="calc">
+            <div class="display">
+                <input type="text" id="display" name="display" readonly>
+            </div>
+            <div>
+                <input type="button" value="MC" onclick="memoryClear()" class="memory">
+                <input type="button" value="MR" onclick="memoryRecall()" class="memory">
+                <input type="button" value="M-" onclick="memorySubtract()" class="memory">
+                <input type="button" value="M+" onclick="memoryAdd()" class="memory">
+            </div>
+            <div>
+                <input type="button" value="AC" onclick="clearDisplay()" class="operator">
+                <input type="button" value="C" onclick="deleteLast()" class="operator">
+                <input type="button" value="%" onclick="appendValue('%')" class="operator">
+                <input type="button" value="÷" onclick="appendValue('/')" class="operator">
+            </div>
+            <div>
+                <input type="button" value="7" onclick="appendValue('7')">
+                <input type="button" value="8" onclick="appendValue('8')">
+                <input type="button" value="9" onclick="appendValue('9')">
+                <input type="button" value="×" onclick="appendValue('*')" class="operator">
+            </div>
+            <div>
+                <input type="button" value="4" onclick="appendValue('4')">
+                <input type="button" value="5" onclick="appendValue('5')">
+                <input type="button" value="6" onclick="appendValue('6')">
+                <input type="button" value="-" onclick="appendValue('-')" class="operator">
+            </div>
+            <div>
+                <input type="button" value="1" onclick="appendValue('1')">
+                <input type="button" value="2" onclick="appendValue('2')">
+                <input type="button" value="3" onclick="appendValue('3')">
+                <input type="button" value="+" onclick="appendValue('+')" class="operator">
+            </div>
+            <div>
+                <input type="button" value="0" onclick="appendValue('0')">
+                <input type="button" value="00" onclick="appendValue('00')">
+                <input type="button" value="." onclick="appendValue('.')">
+                <input type="button" value="=" onclick="calculateResult()" class="equal">
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
