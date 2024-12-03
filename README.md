@@ -28,4 +28,4 @@ This is a simple and beginner-friendly calculator app created using HTML, CSS, a
 ## How to Use:
 1. Clone the repository:
    ```bash
-   https://github.com/yourusername/calculator-app.git
+   https://sidhdhika-banu.github.io/calculator-app/
